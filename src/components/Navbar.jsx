@@ -58,13 +58,13 @@ const Navbar = () => {
 
                                     <Dropdown.Menu>
                                         <Dropdown.Item><Link to="/dining-sets" className='linkStyle'>Dining Sets</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>TV Units</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Shop All Dining Tables</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/tv-units" className='linkStyle'>TV Units</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/shop-all-dining-tables" className='linkStyle'>Shop All Dining Tables</Link></Dropdown.Item>
 
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </li>
-                            <Link to="/about" className='linkStyleLink ml-3'>Ottoman Beds</Link>
+                            <Link to="/ottoman-beds" className='linkStyleLink ml-3'>Ottoman Beds</Link>
 
                             <li>
                                 <Dropdown>
@@ -73,11 +73,10 @@ const Navbar = () => {
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                        <Dropdown.Item><Link to="/blog" className='linkStyle'>Bedroom Sets</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Storage Beds</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Young Room Sets</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Shop All Beds</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Bed Set</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/bedroom-sets" className='linkStyle'>Bedroom Sets</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/young-room-sets" className='linkStyle'>Young Room Sets</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/shop-all-beds" className='linkStyle'>Shop All Beds</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/bed-set" className='linkStyle'>Bed Set</Link></Dropdown.Item>
 
                                     </Dropdown.Menu>
 
@@ -90,20 +89,20 @@ const Navbar = () => {
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                        <Dropdown.Item><Link to="/blog" className='linkStyle'>Coffee Tables</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Nesting Tables</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>TV Units</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Shop All Accessories</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/coffee-tables" className='linkStyle'>Coffee Tables</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/nesting-tables" className='linkStyle'>Nesting Tables</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/tv-unit-accessories" className='linkStyle'>TV Units</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/shop-all-accessories" className='linkStyle'>Shop All Accessories</Link></Dropdown.Item>
                                     </Dropdown.Menu>
 
                                 </Dropdown>
                             </li>
-                            <Link to="/about" className='linkStyleLink ml-3'>Special Offers</Link>
+                            <Link to="/special-offers" className='linkStyleLink ml-3'>Special Offers</Link>
 
 
-                            <Link to="/about" className='linkStyleLink ml-3'>Sofas</Link>
-                            <Link to="/about" className='linkStyleLink ml-3'>Mattressses</Link>
-                            <Link to="/about" className='linkStyleLink ml-3'>Dispaly Offers</Link>
+                            <Link to="/sofa" className='linkStyleLink ml-3'>Sofas</Link>
+                            <Link to="/mattresses" className='linkStyleLink ml-3'>Mattressses</Link>
+                            <Link to="/display-offers" className='linkStyleLink ml-3'>Dispaly Offers</Link>
                             <Link to="/contact" className='linkStyleLink ml-3'>Contact</Link>
                             {/* <Link to="/faq" className='linkStyle ml-3'>Faq</Link> */}
 
@@ -121,12 +120,12 @@ const Navbar = () => {
             <div className={`container-fluid mobile-navbar ${isNavbarVisible ? '' : 'hidden'}`} style={{ display: isNavVisible ? 'block' : 'none' }}>
                 <nav>
                     {/* Close */}
-                    <div className="close-btn" onClick={handleCloseClick}>X</div>
+                    {/* <div className="close-btn" onClick={handleCloseClick}>X</div> */}
                     {/* Close */}
                     <div>
                         <ul className='list-unstyled'>
-                            <li>Home</li>
-                            <li>
+                        <Link to="/" className='linkStyle'>Home</Link>
+                        <li>
                                 <Dropdown>
                                     <Dropdown.Toggle variant="none" id="dropdown-basic">
                                         Living Room
@@ -152,15 +151,15 @@ const Navbar = () => {
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                        <Dropdown.Item><Link to="/blog" className='linkStyle'>Dining Sets</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>TV Units</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Shop All Dining Tables</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/dining-sets" className='linkStyle'>Dining Sets</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/tv-units" className='linkStyle'>TV Units</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/shop-all-dining-tables" className='linkStyle'>Shop All Dining Tables</Link></Dropdown.Item>
 
                                     </Dropdown.Menu>
 
                                 </Dropdown>
                             </li>
-                            <Link to="/about" className='linkStylemobile ml-3'>Ottoman Beds</Link>
+                            <Link to="/ottoman-beds" className='linkStylemobile ml-3'>Ottoman Beds</Link>
 
 
                             <li>
@@ -170,11 +169,10 @@ const Navbar = () => {
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                        <Dropdown.Item><Link to="/blog" className='linkStyle'>Bedroom Sets</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Storage Beds</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Young Room Sets</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Shop All Beds</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Bed Set</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/bedroom-sets" className='linkStyle'>Bedroom Sets</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/young-room-sets" className='linkStyle'>Young Room Sets</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/shop-all-beds" className='linkStyle'>Shop All Beds</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/bed-set" className='linkStyle'>Bed Set</Link></Dropdown.Item>
 
                                     </Dropdown.Menu>
 
@@ -187,22 +185,23 @@ const Navbar = () => {
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                        <Dropdown.Item><Link to="/blog" className='linkStyle'>Coffee Tables</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Nesting Tables</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>TV Units</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Shop All Accessories</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/coffee-tables" className='linkStyle'>Coffee Tables</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/nesting-tables" className='linkStyle'>Nesting Tables</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/tv-unit-accessories" className='linkStyle'>TV Units</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/shop-all-accessories" className='linkStyle'>Shop All Accessories</Link></Dropdown.Item>
                                     </Dropdown.Menu>
+
 
                                 </Dropdown>
                             </li>
 
-                            <Link to="/about" className='linkStylemobile ml-3'>Special Offers</Link>
+                            <Link to="/special-offers" className='linkStylemobile ml-3'>Special Offers</Link>
                             <br />
-                            <Link to="/about" className='linkStylemobile'>Sofas</Link>
+                            <Link to="/sofa" className='linkStylemobile'>Sofas</Link>
                             <br />
-                            <Link to="/about" className='linkStylemobile'>Mattresses</Link>
+                            <Link to="/mattresses" className='linkStylemobile'>Mattresses</Link>
                             <br />
-                            <Link to="/about" className='linkStylemobile'>Display Offers</Link>
+                            <Link to="/display-offers" className='linkStylemobile'>Display Offers</Link>
                             <br />
                             <Link to="/contact" className='linkStylemobile'>Contact</Link>
 

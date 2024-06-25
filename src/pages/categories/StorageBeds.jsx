@@ -34,12 +34,12 @@ const sofaSets = [
   }
 ];
 
-const ShopAllBeds = () => {
+const BedroomSets = () => {
   return (
     <>
-      <BreadCrumb pageName='Shop All Beds' />
+      <BreadCrumb pageName='Bedroom Sets' />
       <div className="container my-5">
-        <h1 className="mb-4 font-1">Beds Shop All</h1>
+        <h1 className="mb-4 font-1">Bedroom Sets</h1>
         <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4">
           <div className="mb-3 mb-md-0">
             <span className="custom-select mr-2">Filter: </span>
@@ -82,4 +82,4 @@ const ShopAllBeds = () => {
   );
 };
 
-export default ShopAllBeds;
+export default BedroomSets;

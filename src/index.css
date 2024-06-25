@@ -170,7 +170,7 @@ p {
 
   .mobile-navbar {
     position: absolute;
-    top: 2.5rem;
+    top: 5rem;
     z-index: 99;
     background-color: var(--color-background);
   }
