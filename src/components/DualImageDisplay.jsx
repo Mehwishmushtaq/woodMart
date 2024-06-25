@@ -13,7 +13,9 @@ const DualImageDisplay = () => {
             <h2 className="heading text-uppercase fw-normal font-1" style={{ fontSize: '50px' }}>SHADES OF <br /> <span className="fw-bold">ELEGANCE</span></h2>
             <p className='fs-4'>Lorem ipsum dolor sit amet, consectetur ad is cing elit, semdo eiusmod tempor est.
             </p>
-            <Button className='mb-4'>Click Me</Button>
+            <a href="/all-products">
+              <Button className='mb-4'>Click Me</Button>
+            </a>          
           </div>
         </Col>
         <Col lg={6} data-aos='fade-left'>
@@ -21,7 +23,7 @@ const DualImageDisplay = () => {
             <Col>
               <div className="image-container mb-3 mb-md-0">
                 <img
-                style={{width:"250px"}}
+                  style={{ width: "250px" }}
                   src={imgOne}
                   alt="Placeholder Image 1"
                   className="floating-image1"
@@ -32,7 +34,7 @@ const DualImageDisplay = () => {
             <Col>
               <div className="image-container d-none d-md-block">
                 <img
-                style={{width:"200px"}}
+                  style={{ width: "200px" }}
                   src={imgTwo}
                   alt="Placeholder Image 1"
                   className="floating-image2 img2"

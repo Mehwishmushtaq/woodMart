@@ -2,7 +2,11 @@ import React, { useState } from 'react'
 import Dropdown from 'react-bootstrap/Dropdown';
 import { FaBars } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import Logo from '../assets/images/Mart (2).png'
+import Logo from '../assets/images/Mart (2).png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
+
+
 
 const Navbar = () => {
     const [isNavVisible, setIsNavVisible] = useState(false);
@@ -109,9 +113,11 @@ const Navbar = () => {
                         </ul>
                     </div>
 
-                    {/* <div className='desktop-navbar-item'>
-                        <button className='btn btn-primary px-4 rounded-pill'>Register</button>
-                    </div> */}
+                    <div className='desktop-navbar-item'>
+                        <a href="/contact" className='btn btn-primary px-4 rounded-pill'>
+                            <FontAwesomeIcon icon={faCartPlus} />
+                        </a>
+                    </div>
                 </section>
                 {/* <a href="#" id='nav-toggle' onClick={toggleNavVisibility}><FaBars className='bars' /></a> */}
             </div>
@@ -124,8 +130,8 @@ const Navbar = () => {
                     {/* Close */}
                     <div>
                         <ul className='list-unstyled'>
-                        <Link to="/" className='linkStyle'>Home</Link>
-                        <li>
+                            <Link to="/" className='linkStyle'>Home</Link>
+                            <li>
                                 <Dropdown>
                                     <Dropdown.Toggle variant="none" id="dropdown-basic">
                                         Living Room
