@@ -114,9 +114,9 @@ const Navbar = () => {
                     </div>
 
                     <div className='desktop-navbar-item'>
-                        <a href="/contact" className='btn btn-primary px-4 rounded-pill'>
+                        <Link to="/contact" className='btn btn-primary px-4 rounded-pill'>
                             <FontAwesomeIcon icon={faCartPlus} />
-                        </a>
+                        </Link>
                     </div>
                 </section>
                 {/* <a href="#" id='nav-toggle' onClick={toggleNavVisibility}><FaBars className='bars' /></a> */}
