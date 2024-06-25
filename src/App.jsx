@@ -38,6 +38,7 @@ import DisplayOffers from './pages/DisplayOffers';
 
 
 
+
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 // import Chatbot from 'react-chatbot-kit';
@@ -88,13 +89,8 @@ const App = () => {
         <Route path="/mattresses" element={<Mattresses/>} />
         <Route path="/display-offers" element={<DisplayOffers/>} />
 
-
-
-
-
-
-
-      </Routes>
+       
+    </Routes>
       {/* <Chatbot config={config} actionProvider={ActionProvider} 	    messageParser={MessageParser} /> */}
       <Footer/>
     </Router>

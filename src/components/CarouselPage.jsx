@@ -7,7 +7,7 @@ import img3 from '../assets/images/img3.jpg';
 function CarouselPage() {
   return (
     <>
-    <Carousel className='home-carousel'>
+    <Carousel className='home-carousel' fade={true} pause={false} interval={3000}>
     <Carousel.Item>
       <img
         className="d-block w-100"
