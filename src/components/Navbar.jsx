@@ -115,7 +115,7 @@ const Navbar = () => {
 
                     <div className='desktop-navbar-item'>
                         <Link to="/contact" className='btn btn-primary px-4 rounded-pill'>
-                            <FontAwesomeIcon icon={faCartPlus} />
+                            <FontAwesomeIcon icon={faCartPlus}/>
                         </Link>
                     </div>
                 </section>
