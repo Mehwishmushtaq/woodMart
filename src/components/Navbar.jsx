@@ -3,8 +3,9 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import { FaBars } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import Logo from '../assets/images/Mart (2).png';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
+import { faSignInAlt } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -113,11 +114,14 @@ const Navbar = () => {
                         </ul>
                     </div>
 
-                    {/* <div className='desktop-navbar-item'>
-                        <Link to="/contact" className='btn btn-primary px-4 rounded-pill'>
-                            <FontAwesomeIcon icon={faCartPlus}/>
+                    <div className='desktop-navbar-item'>
+                        <Link to="/cart" className='btn btn-primary px-3 rounded-pill'>
+                            <FontAwesomeIcon icon={faCartPlus} />
                         </Link>
-                    </div> */}
+                        <Link to="/login" className='btn btn-primary px-3 rounded-pill' style={{marginLeft:'10px'}}>
+                            <FontAwesomeIcon icon={faSignInAlt} />
+                        </Link>
+                    </div>
                 </section>
                 {/* <a href="#" id='nav-toggle' onClick={toggleNavVisibility}><FaBars className='bars' /></a> */}
             </div>

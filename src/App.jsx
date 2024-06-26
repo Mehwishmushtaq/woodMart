@@ -35,6 +35,9 @@ import SpecialOffers from './pages/SpecialOffers';
 import Sofa from './pages/Sofa';
 import Mattresses from './pages/Mattresses';
 import DisplayOffers from './pages/DisplayOffers';
+import ProductList from './components/ProductList';
+import CartManager from './components/CartManager';
+import Login from './components/LoginSignUp'
 
 
 
@@ -88,6 +91,9 @@ const App = () => {
         <Route path="/sofa" element={<Sofa/>} />
         <Route path="/mattresses" element={<Mattresses/>} />
         <Route path="/display-offers" element={<DisplayOffers/>} />
+        <Route path="/cart" element={<CartManager>{() => null}</CartManager>} />
+        <Route path="/login" element={<Login/>} />
+
 
        
     </Routes>
